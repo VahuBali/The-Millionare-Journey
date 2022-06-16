@@ -114,6 +114,52 @@
           "time_required": "6 years"
         }
       ]
+    },
+    {
+      "scenario_number": 6,
+      "scenario_name": "The Accident",
+      "scenario_description": "While driving to your friends house, a car crashed into you on the highway, you know it was not at all your fault as you had the right of way, you have two options",
+      "options": [
+        {
+          "name": "Pursue legal action",
+          "description": "You will sue this driver for the damages that you have faced",
+          "cost": 3000,
+          "possible_money_to_be_made": 20000,
+          "possible_money_to_be_lost": 4000,
+          "time_required": "3 years"
+        },
+        {
+          "name": "Do not pursue legal action",
+          "description": "You will not pursue any legal action for the damages that you have faced.",
+          "cost": 0,
+          "possible_money_to_be_made": 0,
+          "possible_money_to_be_lost": 8000,
+          "time_required": "no amount"
+        }
+      ]
+    },
+    {
+      "scenario_number": 7,
+      "scenario_name": "Dropping for Dropshipping?",
+      "scenario_description": "You can drop everything you are doing and just do dropshipping, or you can work a full time job as a Tech Lead at FaceBook",
+      "options": [
+        {
+          "name": "Dropshipping",
+          "description": "Drop everything you are doing and just do dropshipping, a business model where you buy products for cheap, and sell them for a higher price on your website.",
+          "cost": 5000,
+          "possible_money_to_be_made": 1000000,
+          "possible_money_to_be_lost": 10000,
+          "time_required": "5 years"
+        },
+        {
+          "name": "Full-Time Job",
+          "description": "Work a full-time job as a Tech Lead at FaceBook",
+          "cost": 0,
+          "possible_money_to_be_made": 600000,
+          "possible_money_to_be_lost": 0,
+          "time_required": "1 year"
+        }
+      ]
     }
   ]
 }

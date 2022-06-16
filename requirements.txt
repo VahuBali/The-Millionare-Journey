@@ -1,0 +1,5 @@
+altgraph==0.17.2
+colorama==0.4.4
+macholib==1.16
+pyinstaller-hooks-contrib==2022.7
+scenarios==0.0.2
