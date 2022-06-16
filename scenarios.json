@@ -91,6 +91,29 @@
           "time_required": "5 years"
         }
       ]
+    },
+    {
+      "scenario_number": 5,
+      "scenario_name": "Tutor turns Student?",
+      "scenario_description": "You can tutor little kids, or you can go to college",
+      "options": [
+        {
+          "name": "Tutoring Little Kids",
+          "description": "You have to teach little kids math",
+          "cost": 1500,
+          "possible_money_to_be_made": 2000,
+          "possible_money_to_be_lost": 0,
+          "time_required": "3 years"
+        },
+        {
+          "name": "College",
+          "description": "Go to college and get a computer science degree",
+          "cost": 100000,
+          "possible_money_to_be_made": 200000,
+          "possible_money_to_be_lost": 100000,
+          "time_required": "6 years"
+        }
+      ]
     }
   ]
 }
