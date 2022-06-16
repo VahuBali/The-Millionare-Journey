@@ -4,7 +4,7 @@ import json
 from random import *
 
 print(Fore.RED + """
-        Welcome to the Millionare Journey,
+        Welcome to the Millionare Journey, please set your terminal window to full screen for the best experience!
         """)
 print(Fore.GREEN + """
         Bob, a 15 year-old, wants to make sure he doesn't go bankrupt.
@@ -17,6 +17,7 @@ print(Fore.CYAN + """
         If you dip below $0.00 at any point during this game, game is over.
         """ + Fore.YELLOW +
         """Good Luck!""")
+print()
 
 print(Fore.YELLOW + "----------------------------------------------------------------------------------------------------------------------")
 print(Fore.YELLOW + "----------------------------------------------------------------------------------------------------------------------")
@@ -52,10 +53,10 @@ for scenario in data["scenarios"]:
         print(Fore.MAGENTA + "        >> It costs $" + str(scenario["options"][i]["cost"]))
         input()
         print(
-          Fore.MAGENTA + "        >> You can make up to " + str(scenario["options"][i]["possible_money_to_be_made"]))
+          Fore.MAGENTA + "        >> You can make up to $" + str(scenario["options"][i]["possible_money_to_be_made"]))
         input()
         print(
-          Fore.MAGENTA + "        >> You can lose up to " + str(scenario["options"][i]["possible_money_to_be_lost"]))
+          Fore.MAGENTA + "        >> You can lose up to $" + str(scenario["options"][i]["possible_money_to_be_lost"]))
         input()
         print(Fore.MAGENTA + "        >> This requires " + scenario["options"][i]["time_required"] + " of time")
         input()
