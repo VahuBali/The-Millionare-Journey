@@ -8,7 +8,8 @@ print(Fore.RED + """
         """)
 print(Fore.GREEN + """
         Bob, a 15 year-old, wants to make sure he doesn't go bankrupt.
-        Your job is to help Bob choose the correct decisions so that he doesn't go bankrupt
+        Your job is to help Bob choose the correct decisions so that he doesn't go bankrupt.
+        If you get through all the options without going bankrupt, you win, as simple as that.
         """)
 
 print(Fore.CYAN + """
@@ -68,42 +69,76 @@ for scenario in data["scenarios"]:
 
       if str(response) == "1":
 
-        if balance < scenario["options"][0]["cost"]:
-          print(f"Sorry bud you only have ${balance} but this option costs $" + str(scenario["options"][0]["cost"]))
-        else:
-          money = int(randint(scenario["options"][0]["possible_money_to_be_lost"], scenario["options"][0]["possible_money_to_be_made"]))
-          cost_op_1 = scenario["options"][0]["cost"]
-
-          if money > 0:
-            print(f"You made ${str(money)}")
-            balance = balance - cost_op_1
-            balance = balance + money
-            print(f"Your new balance is ${str(balance)}")
-
-          if money < 0:
-            print(f"You lost ${str(money*-1)}")
-            balance = balance - cost_op_1
-            balance = balance + money
-            print(f"Your new balance is ${str(balance)}")
-
-      if str(response) == "2":
-        money = int(randint((scenario["options"][1]["possible_money_to_be_lost"])*-1, scenario["options"][1]["possible_money_to_be_made"]))
-        cost_op_2= scenario["options"][1]["cost"]
+        money = int(randint(scenario["options"][0]["possible_money_to_be_lost"], scenario["options"][0]["possible_money_to_be_made"]))
+        cost_op_1 = scenario["options"][0]["cost"]
 
         if money > 0:
-          print(f"You made ${str(money)}")
-          balance = balance - cost_op_2
-          balance = balance + money
-          print(f"Your new balance is ${str(balance)}")
+          balance = balance - cost_op_1
+
+          if balance > 0:
+            print(f"You made ${str(money)}")
+            balance = balance + money
+            print(f"Your new balance is ${str(balance)}")
+
+          if balance < 0:
+            print("Sorry man you ran out of money")
+            print("Good luck next time")
+            input(
+              Fore.WHITE + "Click " + Fore.BLUE + "ENTER" + Fore.WHITE + " to leave the game")
+            quit()
 
         if money < 0:
           print(f"You lost ${str(money*-1)}")
-          balance = balance - cost_op_2
+          balance = balance - cost_op_1
+
+          if balance > 0:
+            balance = balance + money
+            print(f"Your new balance is ${str(balance)}")
+
+          if balance < 0:
+            print("Sorry man you ran out of money")
+            print("Good luck next time")
+            input(
+              Fore.WHITE + "Click " + Fore.BLUE + "ENTER" + Fore.WHITE + " to leave the game")
+            quit()
+
+    if str(response) == "2":
+      money = int(randint((scenario["options"][1]["possible_money_to_be_lost"])*-1, scenario["options"][1]["possible_money_to_be_made"]))
+      cost_op_2= scenario["options"][1]["cost"]
+
+      if money > 0:
+        balance = balance - cost_op_2
+
+        if balance > 0:
+          print(f"You made ${str(money)}")
           balance = balance + money
           print(f"Your new balance is ${str(balance)}")
+
+        if balance < 0:
+          print("Sorry man you ran out of money")
+          print("Good luck next time")
+          input(
+            Fore.WHITE + "Click " + Fore.BLUE + "ENTER" + Fore.WHITE + " to leave the game")
+          quit()
+
+      if money < 0:
+        print(f"You lost ${str(money*-1)}")
+        balance = balance - cost_op_2
+
+        if balance > 0:
+          balance = balance + money
+          print(f"Your new balance is ${str(balance)}")
+
+        if balance < 0:
+          print("Sorry man you ran out of money")
+          print("Good luck next time")
+          input(
+            Fore.WHITE + "Click " + Fore.BLUE + "ENTER" + Fore.WHITE + " to leave the game")
+          quit()
 
 
       input(Fore.WHITE + "Time to move on to the next scenario, click the " + Fore.BLUE + "ENTER" + Fore.WHITE + " key to move on!")
       print("")
-    else:
+
+    if balance < 0:
       print(Fore.RED + f"Sorry fam you are out of money")

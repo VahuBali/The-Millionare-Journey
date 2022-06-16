@@ -48,24 +48,47 @@
     },
     {
       "scenario_number": 3,
-      "scenario_name": "Flip or Trip?",
-      "scenario_description": "You could either continue flipping items you found in the dumpster for a profit, or you can take a trip to your local resturant and request them for a job.",
+      "scenario_name": "Waiter turns Tutor?",
+      "scenario_description": "You could either become a waiter, or you can tutor little kids",
       "options": [
         {
-          "name": "Continue Dumpster Diving",
-          "description": "Dumpster dive to possibly find something valuable that you could sell for a higher price",
-          "cost": 0,
-          "possible_money_to_be_made": 200,
-          "possible_money_to_be_lost": 0,
-          "time_required": "4 weeks"
-        },
-        {
-          "name": "Get a job at local resturant",
+          "name": "Waiter",
           "description": "Waiting tables",
           "cost": 15,
           "possible_money_to_be_made": 500,
           "possible_money_to_be_lost": 15,
-          "time_required": "6 months"
+          "time_required": "12 months"
+        },
+        {
+          "name": "Tutoring Little Kids",
+          "description": "You have to teach little kids math",
+          "cost": 0,
+          "possible_money_to_be_made": 700,
+          "possible_money_to_be_lost": 0,
+          "time_required": "12 months"
+        }
+      ]
+    },
+    {
+      "scenario_number": 4,
+      "scenario_name": "Tutor or Zoomer?",
+      "scenario_description": "You can tutor little kids, or you can buy yourself the latest MacBook Air and learn to code",
+      "options": [
+        {
+          "name": "Tutoring Little Kids",
+          "description": "You have to teach little kids math",
+          "cost": 0,
+          "possible_money_to_be_made": 1000,
+          "possible_money_to_be_lost": 0,
+          "time_required": "18 months"
+        },
+        {
+          "name": "Buying Computer",
+          "description": "You can buy the latest MacBook Air and learn to code",
+          "cost": 1200,
+          "possible_money_to_be_made": 100000,
+          "possible_money_to_be_lost": 1200,
+          "time_required": "5 years"
         }
       ]
     }
