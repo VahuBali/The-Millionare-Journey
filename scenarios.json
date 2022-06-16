@@ -1,0 +1,73 @@
+{
+  "scenarios": [
+    {
+      "scenario_number": 1,
+      "scenario_name": "Broke turns to Trash?",
+      "scenario_description": "You will get the choice between dumpster diving, or begging",
+      "options": [
+        {
+          "name": "Dumpster Dive",
+          "description": "Dumpster dive to possibly find something valuable that you could sell for a higher price",
+          "cost": 0,
+          "possible_money_to_be_made": 200,
+          "possible_money_to_be_lost": 0,
+          "time_required": "2 weeks"
+        },
+        {
+          "name": "Beg",
+          "description": "Literally just sit on the floor and beg people for money",
+          "cost": 0,
+          "possible_money_to_be_made": 100,
+          "possible_money_to_be_lost": 0,
+          "time_required": "9 weeks"
+        }
+      ]
+    },
+    {
+      "scenario_number": 2,
+      "scenario_name": "Flip or Trip?",
+      "scenario_description": "You could either continue flipping items you found in the dumpster for a profit, or you can take a trip to your local resturant and request them for a job.",
+      "options": [
+        {
+          "name": "Dumpster Diving",
+          "description": "Dumpster dive to possibly find something valuable that you could sell for a higher price",
+          "cost": 0,
+          "possible_money_to_be_made": 200,
+          "possible_money_to_be_lost": 0,
+          "time_required": "4 weeks"
+        },
+        {
+          "name": "Get a job at local resturant",
+          "description": "Waiting tables",
+          "cost": 15,
+          "possible_money_to_be_made": 500,
+          "possible_money_to_be_lost": 15,
+          "time_required": "6 months"
+        }
+      ]
+    },
+    {
+      "scenario_number": 3,
+      "scenario_name": "Flip or Trip?",
+      "scenario_description": "You could either continue flipping items you found in the dumpster for a profit, or you can take a trip to your local resturant and request them for a job.",
+      "options": [
+        {
+          "name": "Continue Dumpster Diving",
+          "description": "Dumpster dive to possibly find something valuable that you could sell for a higher price",
+          "cost": 0,
+          "possible_money_to_be_made": 200,
+          "possible_money_to_be_lost": 0,
+          "time_required": "4 weeks"
+        },
+        {
+          "name": "Get a job at local resturant",
+          "description": "Waiting tables",
+          "cost": 15,
+          "possible_money_to_be_made": 500,
+          "possible_money_to_be_lost": 15,
+          "time_required": "6 months"
+        }
+      ]
+    }
+  ]
+}
