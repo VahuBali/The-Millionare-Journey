@@ -152,3 +152,4 @@ for scenario in data["scenarios"]:
 
 print(Fore.GREEN + f"CONGRATS FOR NOT GOING BANKRUPT!!!")
 print(Fore.GREEN + f"YOU ENDED WITH ${balance}!!!")
+print(Fore.RED + f"Make sure to share this game with your family and friends. Make sure to also check out YTAC for more games" + Fore.BLUE + "https://stiegleredtech.org/ytac-for-students?utm_source=social&utm_medium=social&utm_campaign=637034137261441035_Confucius1226")
