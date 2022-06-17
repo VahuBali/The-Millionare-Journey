@@ -2,6 +2,7 @@ import scenarios as scenarios
 from colorama import Fore, Back, Style, init
 import json
 from random import *
+import sys, time
 
 print(Fore.RED + """
         Welcome to the Millionare Journey, please set your terminal window to full screen for the best experience!
@@ -22,6 +23,8 @@ print()
 print(Fore.YELLOW + "----------------------------------------------------------------------------------------------------------------------")
 print(Fore.YELLOW + "----------------------------------------------------------------------------------------------------------------------")
 
+time.sleep(0.5)
+
 balance = 0.01
 
 f = open('scenarios.json')
@@ -29,6 +32,7 @@ data = json.load(f)
 
 print("")
 print(Fore.RED + f"You have ${balance} in your account")
+print(Fore.RED + "REMEMBER: YOU HAVE TO CLICK ENTER AFTER THE DESCRIPTION OF EACH OPTION TO REVEAL FURTHER DETAILS ON EACH OPTION!!!")
 
 print("")
 print("")
@@ -42,6 +46,8 @@ for scenario in data["scenarios"]:
       print(Fore.CYAN + scenario["scenario_description"])
       print("")
       print("")
+
+      time.sleep(2)
 
       i = 0
 
@@ -143,3 +149,6 @@ for scenario in data["scenarios"]:
 
     if balance < 0:
       print(Fore.RED + f"Sorry fam you are out of money")
+
+print(Fore.GREEN + f"CONGRATS FOR NOT GOING BANKRUPT!!!")
+print(Fore.GREEN + f"YOU ENDED WITH ${balance}!!!")

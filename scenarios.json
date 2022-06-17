@@ -160,6 +160,121 @@
           "time_required": "1 year"
         }
       ]
+    },
+    {
+      "scenario_number": 8,
+      "scenario_name": "Estate or Stocks?",
+      "scenario_description": "Now that you have started making money (hopefully), you need to start investing to grow your wealth... You have two options.",
+      "options": [
+        {
+          "name": "Real Estate",
+          "description": "Investing in real estate to take in rent from tenants as well as building equity.",
+          "cost": 1000000,
+          "possible_money_to_be_made": 1500000,
+          "possible_money_to_be_lost": 100000,
+          "time_required": "5 years"
+        },
+        {
+          "name": "Stocks",
+          "description": "You can buy, sell, or short a stock (meaning you are betting on the stock going down) to make a profit on each trade.",
+          "cost": 100000,
+          "possible_money_to_be_made": 300000,
+          "possible_money_to_be_lost": -300000,
+          "time_required": "10 weeks"
+        }
+      ]
+    },
+    {
+      "scenario_number": 9,
+      "scenario_name": "Consult the Flip",
+      "scenario_description": "Now that you have started investing, you can now start some side hustles. You have two options.",
+      "options": [
+        {
+          "name": "Consulting Agency",
+          "description": "A professional service firm that provides expertise and specialised labour for a fee.",
+          "cost": 300000,
+          "possible_money_to_be_made": 10000000,
+          "possible_money_to_be_lost": 300000,
+          "time_required": "5 years"
+        },
+        {
+          "name": "Flipping Houses",
+          "description": "Fixing houses and then selling them at a higher price to make a profit.",
+          "cost": 500000,
+          "possible_money_to_be_made": 2000000,
+          "possible_money_to_be_lost": 100000,
+          "time_required": "10 years"
+        }
+      ]
+    },
+    {
+      "scenario_number": 10,
+      "scenario_name": "Hustle the Side",
+      "scenario_description": "Now that you have started investing, you can now start some side hustles. You have two options.",
+      "options": [
+        {
+          "name": "Consulting Agency",
+          "description": "A professional service firm that provides expertise and specialised labour for a fee.",
+          "cost": 300000,
+          "possible_money_to_be_made": 10000000,
+          "possible_money_to_be_lost": 300000,
+          "time_required": "5 years"
+        },
+        {
+          "name": "Flipping Houses",
+          "description": "Fixing houses and then selling them at a higher price to make a profit.",
+          "cost": 500000,
+          "possible_money_to_be_made": 2000000,
+          "possible_money_to_be_lost": 100000,
+          "time_required": "10 years"
+        }
+      ]
+    },
+    {
+      "scenario_number": 11,
+      "scenario_name": "The Lawsuit",
+      "scenario_description": "Some rando kid decided to sue you for 500k on copyright infringement. You have two options",
+      "options": [
+        {
+          "name": "Settlement",
+          "description": "You can settle with the random kid and not go to court",
+          "cost": 500000,
+          "possible_money_to_be_made": 0,
+          "possible_money_to_be_lost": 500000,
+          "time_required": "3 months"
+        },
+        {
+          "name": "Court",
+          "description": "Go to court and fight your grounds in the state of law",
+          "cost": 100000,
+          "possible_money_to_be_made": 1500000,
+          "possible_money_to_be_lost": 750000,
+          "time_required": "3 years"
+        }
+      ]
+    },
+    {
+      "scenario_number": 12,
+      "scenario_name": "Business time",
+      "scenario_description": "It's been a couple of years, now its time to start abusiness venture to gain some extra income, you have two options",
+      "options": [
+        {
+          "name": "Sell a Physical Product",
+          "description": "Sell an all new product called the Confucius Roam which is a set of AR glasses that let you interact with the world using augumented reality technology.",
+          "cost": 5000000,
+          "possible_money_to_be_made": 100000000,
+          "possible_money_to_be_lost": 30000000,
+          "time_required": "20 years"
+        },
+        {
+          "name": "Software Product",
+          "description": "An app that will translate any media into any language using Artifical Intelligence (this includes changing mouth movements)",
+          "cost": 1000000,
+          "possible_money_to_be_made": 50000000,
+          "possible_money_to_be_lost": 20000000,
+          "time_required": "7 years"
+        }
+      ]
     }
   ]
 }
